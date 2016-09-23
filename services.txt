@@ -1,0 +1,12 @@
+# set port for service; here: syncservice
+haproxy_manager -s sync -p 36628
+# restart haproxy
+haproxy_manager -e dev -i
+
+
+#
+# SABRE
+#
+# start sabre-service:
+# clone sabre-service project
+./gradlew run
