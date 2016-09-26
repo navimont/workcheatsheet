@@ -10,3 +10,13 @@ haproxy_manager -e dev -i
 # start sabre-service:
 # clone sabre-service project
 ./gradlew run
+
+
+#
+# Logs
+#
+# QA3
+ssh qa3-applog1.qa3.yodle.com
+cd /natpal/nfs_logs/applog
+# alternatively
+cd /natpal/applog
